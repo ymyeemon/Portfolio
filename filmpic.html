@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/filmpic.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <h1>YM</h1>
+            </div>
+
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <i class="ri-menu-3-fill" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1 id="title">Film Photography</h1>
+        </div>
+
+        <div class="info-section">
+
+            <hr>
+
+            <div class="block">
+                <h2>Cameras</h2>
+
+                <div class="text">
+                    <h3>Pentax Zoom 280-P</h3>
+                    <h3>Konica S-III</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="block">
+                <h2>Film Stocks</h2>
+
+                <div class="text-block">
+                    <h3>Kodak Gold 200</h3>
+                    <h3>Kodak Color Plus 200</h3>
+                    <h3>Fujifilm 200</h3>
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-1">
+                <h1>Chasing sunsets.</h1>
+                <img src=".\img\000025200026.jpg" alt="">
+            </div>
+
+            <div class="pic-2">
+                <h1>Tiny wonderlands.</h1>
+                <img src=".\img\000037280037.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-3">
+                <h1>Take a breather.</h1>
+                <img src=".\img\000025200030.jpg" alt="">
+            </div>
+
+            <div class="pic-4">
+                <h1>Golden days by the coast.</h1>
+                <img class="pic-4" src=".\img\000037280008.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-5">
+                <h1>Ripples of blue.</h1>
+                <img src=".\img\000025210007.JPEG" alt="">
+            </div>
+
+            <div class="pic-6">
+                <h1>Soaking up the summer heat.</h1>
+                <img src=".\img\000025210017.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-7">
+                <h1>Layers of life.</h1>
+                <img src=".\img\000039870022.jpg" alt="">
+            </div>
+
+            <div class="pic-9">
+                <h1>Endless Path.</h1>
+                <img src=".\img\000042200014.JPEG" alt="">
+            </div>
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-10">
+                <h1>A moment of calm.</h1>
+                <img src=".\img\000025210009.JPEG" alt="">
+            </div>
+
+            <div class="pic-11">
+                <h1>Flower bed.</h1>
+                <img src=".\img\IMG_0250.JPG" alt="">
+            </div>
+        </div>
+
+        <div class="pic-section">
+            <div class="pic-12">
+                <h1>Before sunset.</h1>
+                <img src=".\img\000025200028.jpg" alt="">
+            </div>
+
+            <div class="pic-13">
+                <h1>Dwell in sunshine.</h1>
+                <img src=".\img\000025200008.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="contact">
+            <h1>Let's make something great.</h1>
+
+            <div class="button-contact">
+                <div class="circle">
+                    <a href="contact.html"><p>Contact me</p></a>
+                </div>
+
+                <h1>for wonderful collaborations.</h1>
+            </div>
+
+            <div class="socials">
+                <h3><a href="mailto:ymtdreamer@gmail.com">Email</a></h3>
+                <h3><a href="https://www.linkedin.com/in/yee-mon-thu">LinkedIn</a></h3>
+                <h3><a href="https://www.instagram.com/bienaimee69/">Instagram</a></h3>
+                <h3><a href="https://www.behance.net/amyymt">Behance</a></h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>© Yee Mon 2025</p>
+    
+            <p>All rights reserved.</p>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/SplitText.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <script>
+        
+        /* Navigation Menu */
+
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            } 
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+        const myText = new SplitType('#title')
+
+        gsap.to('.char', {
+            y: 0,
+            stagger:  0.06,
+            delay: 0.2,
+            duration: .1
+        })
+    </script>
+
+</body>
+</html>
