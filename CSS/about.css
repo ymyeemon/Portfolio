@@ -345,6 +345,7 @@ nav ul li a {
 @media (max-width: 430px) {
     .about-section {
         height: auto;
+        padding: 80px 50px;
     }
 
     .text {
@@ -615,7 +616,7 @@ nav ul li a {
 
 .socials-block {
     display: flex;
-    gap: 285px;
+    gap: 350px;
 }
 
 .row1 {
@@ -625,10 +626,11 @@ nav ul li a {
 }
 
 .row1 a {
-    font-family: SatoshiLight;
-    font-size: 1.3rem;
-    letter-spacing: 3px;
     text-decoration: none;
+}
+
+.row1 i {
+    font-size: 3rem;
     color: black;
 }
 
@@ -637,19 +639,14 @@ nav ul li a {
         left: 0%;
     }
 
-    .row1 a {
-        font-size: 1.1rem;
-    }
-
     .socials-block {
         gap: 200px;
     }
 }
 
 @media (max-width: 430px) {
-    .socials-block {
-        flex-direction: column;
-        gap: 50px;
+    .row1 i {
+        font-size: 2.5rem;
     }
 }
 
@@ -726,10 +723,6 @@ nav ul li a {
     .circle a {
         font-size: 0.8rem;
     }
-}
-
-@media (max-width: 430px) {
-
 }
 
 /* footer */

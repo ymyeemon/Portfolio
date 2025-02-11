@@ -892,19 +892,16 @@ nav ul li a {
 
 .contact-socials a {
     text-decoration: none;
-    font-family: SatoshiLight;
-    font-size: 1.3rem;
-    letter-spacing: 3px;
+}
+
+.contact-socials i {
+    font-size: 3rem;
     color: black;
 }
 
 @media (max-width: 1024px) {
     .contact-text {
         font-size: 4rem;
-    }
-
-    .contact-socials a {
-        font-size: 1.2rem;
     }
 
     .contact-row {
@@ -942,10 +939,14 @@ nav ul li a {
         font-size: 0.8rem;
     }
 
-    .contact-socials a {
-        font-size: 1rem;
+}
+
+@media (max-width: 430px) {
+    .contact-socials i {
+        font-size: 2rem;
     }
 }
+
 
 
 /* footer */
